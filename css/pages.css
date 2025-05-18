@@ -1,0 +1,137 @@
+.page-block{
+  background: var(--bg);
+}
+#about .model-body{
+  padding: 2rem;
+  flex-wrap: wrap;
+
+ 
+ }
+ #about .image-wrapper{
+  flex: 1;
+  text-align: center;
+  max-width: initial;
+  margin-right: 0;
+ }
+ #about .image-wrapper img{
+ max-width: 200px;
+ border-radius: 50%;
+ }
+ .about-text{
+  flex: 1;
+
+ }
+ .about-text p,
+  .about-text .contact-me-block
+ {
+  padding: 1.2rem;
+  color: rgb(33, 33, 43);
+ }
+ #contact .model-body{
+  padding: 2rem;
+  flex-wrap: wrap;
+ }
+ .contact-text{
+padding-bottom: 3.5rem;
+ }
+ .folio-form{
+  width: 100%;
+  height: fit-content;
+ }
+ .folio-form .form-control{
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  padding: 0 0 5px 0;
+  line-height: 26px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  color: var(--color-text);
+  outline: none;
+  background: transparent;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+ }
+
+.marque {
+  width: var( --marque-width);
+  height: var(--marque-height);
+  overflow: hidden;
+  margin: 2rem auto;
+}
+ .marque-content{
+  display: flex;
+  list-style: none;
+  height: 100%;
+}
+.marque-content li{
+  width: var(--marque-elms-width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100%;
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-size: calc(var(--marque-height)* 3/4);
+  color: var(--color-text);
+  animation: scrolling var(--marque-duration-animation) linear infinite;
+}
+.marque::before,
+.marque::after{
+  height: 100%;
+  position: absolute;
+  top: 0;
+content: "";  
+z-index: 1;
+width: 20px;
+
+}
+.marque::before{
+  left: 0;
+  background: linear-gradient(to right, var(--bg), transparent);
+}
+.marque::after{
+  right: 0;
+  background: linear-gradient(to left, var(--bg), transparent);
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1 * var(--marque-elms-width) * var(--marque-elms)));
+  }
+
+}
+@media screen and (max-width: 991px) {
+  #about .image-wrapper,
+  #about .about-text{
+    flex:initial;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 767px) {
+:root{
+  --marque-width: 100%;
+  --marque-elms-displayed:3;
+ 
+}
+.marque::before,
+.marque::after{
+  width: 10px;
+}
+}
+@media screen and (max-width: 450px) {
+  :root{
+    --marque-width: 100%;
+    --marque-elms-displayed:2;
+  }
+  .marque::before,
+  .marque::after{
+    width: 10px;
+  }
+  }
+  
+
