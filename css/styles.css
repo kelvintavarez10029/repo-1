@@ -323,7 +323,7 @@ transition-delay: all 0.5s;
   pointer-events: none;
 }
 .card-pop-up-box h3{
-  color: var(--color-text);
+  color: var(--bg);
   font-size: 1.2rem;
   letter-spacing: -0.5px;
   font-weight: 700;
