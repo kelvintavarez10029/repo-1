@@ -305,7 +305,7 @@ transition-delay: all 0.5s;
   border-radius: 8px;
   z-index: -1;
   border-radius: 8px;
-  opacity: 0.9;
+  opacity: 0.7;
 }
 .portfolio-card:hover .card-pop-up-box{
   bottom: 20px; 
