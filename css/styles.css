@@ -442,7 +442,9 @@ opacity: 1;
     flex-direction: column;
     padding: 20px;
   }
-
+  .image-wrapper img{
+   display: none;
+  }
  
 }
 
