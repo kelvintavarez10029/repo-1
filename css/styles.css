@@ -445,6 +445,9 @@ opacity: 1;
   .image-wrapper img{
    display: none;
   }
+  .model-header h3{
+    display: none;
+  }
  
 }
 
@@ -459,6 +462,9 @@ opacity: 1;
   .image-wrapper img{
    display: none;
   }
+   .model-header h3{
+    display: none;
+  }
 
   @media (max-width: 768px) {
   .main-container {
@@ -469,6 +475,9 @@ opacity: 1;
   }
   .image-wrapper img{
    display: none;
+  }
+   .model-header h3{
+    display: none;
   }
 }
 
