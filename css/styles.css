@@ -442,14 +442,8 @@ opacity: 1;
     flex-direction: column;
     padding: 20px;
   }
-  .dark-part, .light-part {
-    width: 100%;
-    padding: 20px;
-  }
-  img {
-    width: 100%;
-    height: auto;
-  }
+
+ 
 }
 
 /* For phones */
@@ -460,16 +454,19 @@ opacity: 1;
   h1 {
     font-size: 24px;
   }
-  img{
-    width: 100%;
-    height: auto;
+  .image-wrapper img{
+   display: none;
   }
+
   @media (max-width: 768px) {
   .main-container {
     flex-direction: column;
   }
   .dark-part, .light-part {
     width: 100%;
+  }
+  .image-wrapper img{
+   display: none;
   }
 }
 
