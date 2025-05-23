@@ -436,3 +436,44 @@ opacity: 1;
 .slide-ctrl-container button:nth-child(2){
   padding-left: 10px;
 }
+/* For tablets */
+@media (max-width: 992px) {
+  .main-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .dark-part, .light-part {
+    width: 100%;
+    padding: 20px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* For phones */
+@media (max-width: 576px) {
+  .main-container {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+  @media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+  .dark-part, .light-part {
+    width: 100%;
+  }
+}
+
+}
+
+ 
+  
